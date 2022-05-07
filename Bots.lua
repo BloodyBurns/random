@@ -4,5 +4,5 @@ return {
   'exlampia', 'WhyteGirlsRules', 'rileyswantedW', 'WhyteGirlsAreTheBest', 'BACKROOMSHROOMS', 'RileyWhipsBlacks', 'MurderThatBlackNig', 'exolifi3d4131', 'alghtnca',
   'PIutoRuinedDoIlhouse', 'CageTheBlacksPeople', '3O6am', '1700sWereTheBest', 'TheClanKilledANiegr', 'BlacksNeedaBeHanged', 'ShootDemNiegrs', 'KuKlexClanMemberBot', 
   'kuKlexClanLeader', 'TheGrandWizOfDaKlan', 'TheNiegrKiller', 'yesssitsurgift', 'Join_Phonkapparel', 'jackodanigkilla', 'hatenigpyworks', 'PvjxDaNigKiIIa', 'franceoverme',
-  'franceoverthem', 'CantBotMe1', 'EDP_CUPCAKEGUY', 'Pluto_ZnhUJ12Jnnk98J', 'GOOCNDJNDWJN', 'PlutoOwnsDollhouse'
+  'franceoverthem', 'CantBotMe1', 'EDP_CUPCAKEGUY', 'Pluto_ZnhUJ12Jnnk98J', 'GOOCNDJNDWJN', 'PlutoOwnsDollhouse', 'Paranormal00_01', 'PIutoOwnsDollhouse'
 }
