@@ -5,5 +5,5 @@ return {
   'PIutoRuinedDoIlhouse', 'CageTheBlacksPeople', '3O6am', '1700sWereTheBest', 'TheClanKilledANiegr', 'BlacksNeedaBeHanged', 'ShootDemNiegrs', 'KuKlexClanMemberBot', 
   'kuKlexClanLeader', 'TheGrandWizOfDaKlan', 'TheNiegrKiller', 'yesssitsurgift', 'Join_Phonkapparel', 'jackodanigkilla', 'hatenigpyworks', 'PvjxDaNigKiIIa', 'franceoverme',
   'franceoverthem', 'CantBotMe1', 'EDP_CUPCAKEGUY', 'Pluto_ZnhUJ12Jnnk98J', 'GOOCNDJNDWJN', 'PlutoOwnsDollhouse', 'Paranormal00_01', 'PIutoOwnsDollhouse', 'AllHailvss2324',
-  'VOIDED_0987654', 'Voided_1299123', 'qiouwdb1i2o3125', 'e0tq', 'mario75', 'HoldingMinions1', 'HoldingMinions6', 'HoldingMinions4', 'PlutoOn4GigsOfRam'
+  'VOIDED_0987654', 'Voided_1299123', 'qiouwdb1i2o3125', 'e0tq', 'mario75', 'HoldingMinions1', 'HoldingMinions6', 'HoldingMinions4', 'PlutoOn4GigsOfRam', 'JoinMyFurryGroup'
 }
