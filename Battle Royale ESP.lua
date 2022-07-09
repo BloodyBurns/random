@@ -1,5 +1,5 @@
 _G.IvESP_Settings = {
-	Tag = true,
+    Tag = true,
     Filled = true,
     Color = Color3.new(1, 0, 0),
 }
