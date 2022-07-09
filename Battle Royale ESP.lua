@@ -47,7 +47,7 @@ local Import = function(Humanoid, Part)
 end
 
 for _, v in next, workspace:GetDescendants() do
-    if v:IsA('Humanoid') then
+    if v:IsA('Humanoid') and not v:IsDescendantOf(game:GetService('Players').LocalPlayer) then
         Import(v, v.Parent.UpperTorso)
     end
 end
