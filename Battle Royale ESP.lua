@@ -9,7 +9,7 @@ local Import = function(Humanoid, Part)
     Overhead.Name = 'Iv ESP'
     Overhead.Enabled = _G.IvESP_Settings.Tag or false
     Overhead.Parent = Part.Parent.Head
-    Overhead.TextLabel.Text = '<font color = \'rgb(0, 255, 0)\'>' .. Humanoid.Health ..'</font>'
+    Overhead.TextLabel.Text = '<font color = \'rgb(0, 255, 0)\'>' .. Humanoid.Parent.Name ..'</font>'
     Overhead.TextLabel.TextSize = 25
             
     BoxUI.Parent = Part
@@ -44,6 +44,11 @@ local Import = function(Humanoid, Part)
             BBU.TextLabel.Text = Player.Name .. '<font color = \'rgb(255, 0, 0)\'> | ' .. math.floor(Health) ..'</font>'	
         end
     end)
+end
+
+for _, v in next, plrs:GetPlayers() do
+    chr = v.Character or v.CharacterAdded:Wait()
+    chr.Name = v.DisplayName
 end
 
 for _, v in next, workspace:GetDescendants() do
