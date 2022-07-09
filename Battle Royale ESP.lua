@@ -1,9 +1,3 @@
-_G.IvESP_Settings = {
-    Tag = true,
-    Filled = true,
-    Color = Color3.new(1, 0, 0),
-}
-
 local plrs = game:GetService('Players')
 local plr = game:GetService('Players').LocalPlayer
 local Import = function(Humanoid, Part)
