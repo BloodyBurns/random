@@ -1,15 +1,22 @@
+_G.IvESP_Settings = {
+	Tag = true,
+    Filled = true,
+    Color = Color3.new(1, 0, 0),
+}
+
 local plrs = game:GetService('Players')
 local plr = game:GetService('Players').LocalPlayer
 local Import = function(Humanoid, Part)
-	local Overhead = game:GetObjects('rbxassetid://10116879170')[1]
-	local ESP = game:GetObjects('rbxassetid://10171312876')[1] -- // Box | Health
+    local Overhead = game:GetObjects('rbxassetid://10116879170')[1]
+    local ESP = game:GetObjects('rbxassetid://10171312876')[1] -- // Box | Health
     local HealthUI = ESP.Health
     local BoxUI = ESP.Box
     
     Overhead.Name = 'Iv ESP'
-	Overhead.Parent = Part.Parent.Head
-	Overhead.TextLabel.Text = '<font color = \'rgb(0, 255, 0)\'>' .. Humanoid.Health ..'</font>'
-	Overhead.TextLabel.TextSize = 25
+    Overhead.Enabled = _G.IvESP_Settings.Tag or false
+    Overhead.Parent = Part.Parent.Head
+    Overhead.TextLabel.Text = '<font color = \'rgb(0, 255, 0)\'>' .. Humanoid.Health ..'</font>'
+    Overhead.TextLabel.TextSize = 25
             
     BoxUI.Parent = Part
     BoxUI.Adornee = Part
@@ -30,17 +37,17 @@ local Import = function(Humanoid, Part)
         HealthUI.Bar.Position = UDim2.new(0.02, 0, 1 - Health/100, 0)
 
         if Health > 80 then
-        	Overhead.TextLabel.Text = Player.Name .. '<font color = \'rgb(0, 255, 0)\'> | ' .. math.floor(Character.Humanoid.Health) ..'</font>'	
+            Overhead.TextLabel.Text = Player.Name .. '<font color = \'rgb(0, 255, 0)\'> | ' .. math.floor(Character.Humanoid.Health) ..'</font>'	
             HealthUI.Bar.BackgroundColor3 = Color3.new(0, 1, 0)
         elseif Health > 60 then
-			Overhead.TextLabel.Text = Player.Name .. '<font color = \'rgb(255, 200, 0)\'> | ' .. math.floor(Health) ..'</font>'	
-			HealthUI.Bar.BackgroundColor3 = Color3.new(0.6, 1, 0)
+            Overhead.TextLabel.Text = Player.Name .. '<font color = \'rgb(255, 200, 0)\'> | ' .. math.floor(Health) ..'</font>'	
+            HealthUI.Bar.BackgroundColor3 = Color3.new(0.6, 1, 0)
         elseif Health > 35 then
-			Overhead.TextLabel.Text = Player.Name .. '<font color = \'rgb(255, 155, 0)\'> | ' .. math.floor(Health) ..'</font>'	
-			HealthUI.Bar.BackgroundColor3 = Color3.new(1, 0.5, 0)
+            Overhead.TextLabel.Text = Player.Name .. '<font color = \'rgb(255, 155, 0)\'> | ' .. math.floor(Health) ..'</font>'	
+            HealthUI.Bar.BackgroundColor3 = Color3.new(1, 0.5, 0)
         else
             HealthUI.Bar.BackgroundColor3 = Color3.new(1, 0, 0)
-			BBU.TextLabel.Text = Player.Name .. '<font color = \'rgb(255, 0, 0)\'> | ' .. math.floor(Health) ..'</font>'	
+            BBU.TextLabel.Text = Player.Name .. '<font color = \'rgb(255, 0, 0)\'> | ' .. math.floor(Health) ..'</font>'	
         end
     end)
 end
@@ -52,8 +59,8 @@ for _, v in next, workspace:GetDescendants() do
 end
 
 workspace.DescendantAdded:Connect(function(Obj)
-	if Obj:IsA('Humanoid') then
-		game:GetService('RunService').RenderStepped:Wait()
-		Import(Obj, Obj.Parent.UpperTorso)
-	end
+    if Obj:IsA('Humanoid') then
+        game:GetService('RunService').RenderStepped:Wait()
+        Import(Obj, Obj.Parent.UpperTorso)
+    end
 end)
