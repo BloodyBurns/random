@@ -46,20 +46,8 @@ local Import = function(Humanoid, Part)
     end)
 end
 
-for _, v in next, plrs:GetPlayers() do
-    chr = v.Character or v.CharacterAdded:Wait()
-    chr.Name = v.DisplayName
-end
-
 for _, v in next, workspace:GetDescendants() do
-    if v:IsA('Humanoid') and not v:IsDescendantOf(game:GetService('Players').LocalPlayer) then
+    if v:IsA('Humanoid') and not v:IsDescendantOf(game:GetService('Players').LocalPlayer.Character) then
         Import(v, v.Parent.UpperTorso)
     end
 end
-
-workspace.DescendantAdded:Connect(function(Obj)
-    if Obj:IsA('Humanoid') then
-        game:GetService('RunService').RenderStepped:Wait()
-        Import(Obj, Obj.Parent.UpperTorso)
-    end
-end)
